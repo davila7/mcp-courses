@@ -17,26 +17,26 @@ The **M×N Integration Problem** refers to the challenge of connecting M differe
 ### Without MCP (M×N Problem)
 Without a protocol like MCP, developers would need to create M×N custom integrations—one for each possible pairing of an AI application with an external capability.
 
-[image]
+<img width="882" alt="Screenshot 2025-06-25 at 07 22 33" src="https://github.com/user-attachments/assets/80236237-b502-46ae-997d-df3be9c48671" />
 
 Each AI application would need to integrate with each tool/data source individually. This is a very complex and expensive process which introduces a lot of friction for developers, and high maintenance costs.
 
 Once we have multiple models and multiple tools, the number of integrations becomes too large to manage, each with its own unique interface.
 
-[image]
+<img width="882" alt="Screenshot 2025-06-25 at 07 23 24" src="https://github.com/user-attachments/assets/6db028ff-d945-4eab-ae23-481f810c68c2" />
 
 ### With MCP (M+N Solution)
 MCP transforms this into an M+N problem by providing a standard interface: each AI application implements the client side of MCP once, and each tool/data source implements the server side once. 
 
 This dramatically reduces integration complexity and maintenance burden.
 
-[image]
+<img width="877" alt="Screenshot 2025-06-25 at 07 22 51" src="https://github.com/user-attachments/assets/d6acad67-6642-47d0-9662-b4d1bcea286e" />
 
 Each AI application implements the client side of MCP once, and each tool/data source implements the server side once.
 
 ## Components
 
-[image]
+<img width="860" alt="Screenshot 2025-06-25 at 07 23 55" src="https://github.com/user-attachments/assets/e7aa2377-2e69-483b-b502-4615e18020fe" />
 
 - **Host:** The user-facing AI application that end-users interact with directly. Examples include Anthropic’s Claude Desktop, AI-enhanced IDEs like Cursor, inference libraries like Hugging Face Python SDK, or custom applications built in libraries like LangChain or smolagents. Hosts initiate connections to MCP Servers and orchestrate the overall flow between user requests, LLM processing, and external tools.
 
