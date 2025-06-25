@@ -1,6 +1,8 @@
 # Architectural Components of MCP
 The MCP architecture consists of three primary components, each with well-defined roles and responsibilities: Host, Client, and Server. We touched on these in the previous section, but let’s dive deeper into each component and their responsibilities.
 
+<img width="866" alt="Screenshot 2025-06-25 at 07 33 27" src="https://github.com/user-attachments/assets/c92ce176-ee33-4a99-888a-e618a8c33e14" />
+
 ## Host
 The Host is the user-facing AI application that end-users interact with directly.
 
