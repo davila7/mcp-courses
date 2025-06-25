@@ -56,3 +56,17 @@ Of course, your application’s value is the sum of the capabilities it offers. 
 
 
 In the following diagram, we can see the collective capabilities applied to a use case for a code agent.
+
+<img width="769" alt="Screenshot 2025-06-25 at 07 27 13" src="https://github.com/user-attachments/assets/ad8672d4-4a6e-4a16-b241-6aee2a710e17" />
+
+This application might use their MCP entities in the following way:
+
+| Entity | Name | Description |
+|--------|------|-------------|
+| Tool | Code Interpreter | A tool that can execute code that the LLM writes. |
+| Resource | Documentation | A resource that contains the documentation of the application. |
+| Prompt | Code Style | A prompt that guides the LLM to generate code. |
+| Sampling | Code Review | A sampling that allows the LLM to review the code and make further decisions. |
+
+
+
