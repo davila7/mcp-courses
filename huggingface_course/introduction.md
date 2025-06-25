@@ -44,3 +44,15 @@ Each AI application implements the client side of MCP once, and each tool/data s
 
 - **Server:** An external program or service that exposes capabilities (Tools, Resources, Prompts) via the MCP protocol.
 
+Capabilities
+Of course, your application’s value is the sum of the capabilities it offers. So the capabilities are the most important part of your application. MCP’s can connect with any software service, but there are some common capabilities that are used for many AI applications.
+
+| Capability | Description | Example |
+|------------|-------------|---------|
+| Tools | Executable functions that the AI model can invoke to perform actions or retrieve computed data. Typically relating to the use case of the application. | A tool for a weather application might be a function that returns the weather in a specific location. |
+| Resources | Read-only data sources that provide context without significant computation. | A researcher assistant might have a resource for scientific papers. |
+| Prompts | Pre-defined templates or workflows that guide interactions between users, AI models, and the available capabilities. | A summarization prompt. |
+| Sampling | Server-initiated requests for the Client/Host to perform LLM interactions, enabling recursive actions where the LLM can review generated content and make further decisions. | A writing application reviewing its own output and decides to refine it further. |
+
+
+In the following diagram, we can see the collective capabilities applied to a use case for a code agent.
